@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .profile-container {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      max-width: 800px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      color: #ff6347;
+      font-size: 40px;
+      margin-bottom: 10px;
+      font-family: 'Georgia', serif;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      animation: textGlow 1.5s infinite alternate;
+    }
+
+    @keyframes textGlow {
+      from {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      to {
+        text-shadow: 2px 2px 20px rgba(255, 99, 71, 0.8);
+      }
+    }
+
+    h2 {
+      color: #2e8b57;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #666;
+      border-left: 6px solid #ff6347;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .description:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-header {
+      font-size: 26px;
+      color: #2e8b57;
+      margin-top: 30px;
+      text-decoration: underline;
+    }
+
+    .contact-box {
+      border: 2px solid #ff6347;
+      border-radius: 12px;
+      background-color: #fff7f2;
+      padding: 25px;
+      margin-top: 20px;
+      animation: popIn 0.5s ease-in-out;
+    }
+
+    @keyframes popIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .contact-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-box li {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .contact-box a {
+      text-decoration: none;
+      color: #ff4500;
+      font-weight: bold;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    .email {
+      color: #008080;
+    }
+
+    .tel {
+      color: #008000;
+    }
+
+    .divider {
+      height: 2px;
+      background-color: #2e8b57;
+      margin: 20px 0;
+      border-radius: 2px;
+      animation: grow 1s ease-in-out;
+    }
+
+    @keyframes grow {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <h1 class="name">Jane Doe</h1>
+    <div class="divider"></div>
+    <h2 class="title">Web Developer</h2>
+    <p class="description">
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+      there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+      of the Semantics, a large language ocean.
+    </p>
+    <p class="description">
+      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+      It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+    </p>
+    <h3 class="contact-header">Contact Information</h3>
+    <div class="contact-box">
+      <ul>
+        <li>Email: <span class="email">jane@example.com</span></li>
+        <li>Web: <a href="http://example.com" target="_blank">http://example.com</a></li>
+        <li>Tel: <span class="tel">123 45678</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
